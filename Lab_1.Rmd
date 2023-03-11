@@ -74,6 +74,7 @@ student_matrix
 total_grade_student <- rowSums(student_matrix[,-5])
 total_grade_student
 ```
+
 ---
 3.2 Pegue el vector total_grade_student con la matriz students_matrix por medio de la funciòn cbind y asigne el resultado a una nueva matriz de nombre result_students.
 ---
@@ -151,6 +152,7 @@ students_projection(result_students)
 ---
 7.1 Construya la función index_education que reciba un parámetro de nombre grade.
 ---
+
 La función debe operar la siguiente fórmula
 $$ index education = \frac{1 + (grade/100)}{2} $$
 
@@ -159,6 +161,7 @@ index_education <- function(grade){
   return((1 + (grade/100))/2)
 }
 ```
+
 ---
 7.2 Utilice students_grades_df seleccionando todas las filas y solamente las primeras 4 columnas, luego asine el resultado en all_students_grade
 ---
